@@ -34,7 +34,7 @@ function Hero() {
             </a>
             
             <a 
-              href="https://linkedin.com/in/vaibhavsharma" 
+              href="https://linkedin.com/in/vaibhavs825" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-gray-100 hover:bg-primary-50 transition-colors group"
@@ -44,7 +44,7 @@ function Hero() {
             </a>
             
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:vaibhavs825@gmail.com" 
               className="p-3 rounded-full bg-gray-100 hover:bg-primary-50 transition-colors group"
               data-testid="link-email"
             >

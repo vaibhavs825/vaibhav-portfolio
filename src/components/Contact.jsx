@@ -27,11 +27,11 @@ function Contact() {
                 </div>
               </div>
               <a 
-                href="mailto:vaibhav.sharma@example.com" 
+                href="mailto:vaibhavs825@gmail.com" 
                 className="text-primary-600 hover:text-primary-700 font-medium"
                 data-testid="link-contact-email"
               >
-                vaibhav.sharma@example.com
+                vaibhavs825@gmail.com
               </a>
             </div>
             
@@ -72,7 +72,7 @@ function Contact() {
               </a>
               
               <a 
-                href="https://linkedin.com/in/vaibhavsharma" 
+                href="https://linkedin.com/in/vaibhavs825" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 px-6 py-3 bg-white rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors group"
