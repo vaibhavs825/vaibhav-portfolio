@@ -1,51 +1,87 @@
-# Project Documentation
+# Vaibhav Sharma - Portfolio Website
 
 ## Overview
 
-This repository appears to be empty or the contents were not provided for analysis. This template replit.md file should be updated once the actual codebase is available for review.
+Personal portfolio website for Vaibhav Sharma, Senior Data Scientist specializing in MLOps & Data Engineering. Built with React and Tailwind CSS for deployment on GitHub Pages.
 
-The project structure, technologies, and architectural decisions will need to be analyzed from the actual repository contents to provide meaningful guidance.
+**Key Features:**
+- Responsive design with minimalist, professional styling
+- Hero section with professional introduction
+- Skills showcase organized by technology categories
+- Featured projects highlighting ML/Data Engineering work
+- Contact section with social media links
+- Optimized for GitHub Pages deployment
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design preference: Minimalist & professional style with light theme, soft grays/whites, and blue highlights.
 
 ## System Architecture
 
 ### Frontend Architecture
-- Architecture details to be determined based on repository analysis
-- Framework and technology stack to be identified
-- Component structure and organization patterns to be documented
+- **Framework**: React 19 with Vite for fast development and building
+- **Styling**: Tailwind CSS with custom design system
+- **Components**: Modular component structure (Hero, Skills, Projects, Contact)
+- **Icons**: Lucide React for consistent iconography
+- **Typography**: Inter font family for professional appearance
 
-### Backend Architecture
-- Server architecture and framework to be identified
-- API design patterns and routing structure to be analyzed
-- Business logic organization to be documented
+### Component Structure
+```
+src/
+├── components/
+│   ├── Hero.jsx       # Main landing section with intro
+│   ├── Skills.jsx     # Technical skills showcase
+│   ├── Projects.jsx   # Featured project highlights  
+│   └── Contact.jsx    # Contact information and links
+├── App.jsx           # Main app component
+├── main.jsx          # React entry point
+└── index.css         # Global styles and Tailwind imports
+```
 
-### Data Storage
-- Database technology and schema design to be reviewed
-- Data access patterns and ORM usage to be identified
-- Migration and seeding strategies to be documented
+### Deployment Configuration
+- **GitHub Pages**: Automated deployment via GitHub Actions
+- **Build Tool**: Vite with optimized production builds
+- **Domain**: Will be available at username.github.io/repository-name
 
-### Authentication & Authorization
-- Authentication mechanisms to be identified
-- User management and session handling to be analyzed
-- Permission and role-based access control to be documented
+## Dependencies
 
-## External Dependencies
+### Core Framework
+- React 19.1.1 - Modern React with latest features
+- React DOM 19.1.1 - DOM rendering
+- Vite 7.1.3 - Fast build tool and dev server
 
-### Third-party Services
-- External APIs and integrations to be identified
-- Payment processors, analytics, or other services to be documented
+### Styling & UI
+- Tailwind CSS 4.1.12 - Utility-first CSS framework
+- PostCSS 8.5.6 - CSS processing
+- Autoprefixer 10.4.21 - CSS vendor prefixing
+- Lucide React 0.542.0 - Icon library
+- React Icons 5.5.0 - Additional icon sets
 
-### Development Dependencies
-- Build tools, bundlers, and development workflow to be analyzed
-- Testing frameworks and quality assurance tools to be identified
+### Development
+- @vitejs/plugin-react 5.0.2 - Vite React plugin
 
-### Database & Storage
-- Database providers and configuration to be documented
-- File storage solutions and CDN usage to be identified
+## Recent Changes (August 31, 2025)
 
----
+✅ **Project Setup**
+- Initialized React portfolio project with Vite
+- Configured Tailwind CSS with custom color palette
+- Set up modern development workflow
 
-**Note**: This template should be updated with actual repository analysis once the codebase contents are provided.
+✅ **Portfolio Components** 
+- Created Hero section with professional introduction
+- Built Skills section with categorized technology showcase
+- Developed Projects section featuring 3 key projects
+- Implemented Contact section with social media links
+
+✅ **GitHub Pages Setup**
+- Configured GitHub Actions workflow for automated deployment
+- Set up proper build configuration for static hosting
+
+## Next Steps for GitHub Deployment
+
+1. Create new GitHub repository (e.g., `vaibhav-portfolio`)
+2. Push code to repository
+3. Enable GitHub Pages in repository settings
+4. Update social media links with actual profiles
+5. Add custom domain if desired
