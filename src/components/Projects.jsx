@@ -26,8 +26,8 @@ function Projects() {
   ]
 
   return (
-    <section id="projects" className="bg-white section-padding">
-      <div className="max-width-container">
+    <section id="projects" className="bg-white px-6 py-16 md:px-12 lg:px-20">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Featured Projects
@@ -41,7 +41,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden card-hover"
+              className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               data-testid={`card-project-${project.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
               <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>

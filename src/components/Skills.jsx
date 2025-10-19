@@ -30,8 +30,8 @@ function Skills() {
   ]
 
   return (
-    <section id="skills" className="bg-gray-50 section-padding">
-      <div className="max-width-container">
+    <section id="skills" className="bg-gray-50 px-6 py-16 md:px-12 lg:px-20">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Technical Expertise
@@ -45,7 +45,7 @@ function Skills() {
           {skillCategories.map((category, index) => (
             <div 
               key={index}
-              className="bg-white rounded-lg p-6 shadow-sm card-hover border border-gray-100"
+              className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               data-testid={`card-skill-${category.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
               <div className="flex items-center space-x-3 mb-4">

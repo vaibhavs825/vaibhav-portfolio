@@ -7,10 +7,10 @@ function Hero() {
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
-      <div className="max-width-container section-padding text-center">
+      <div className="max-w-6xl mx-auto px-6 py-16 md:px-12 lg:px-20 text-center">
         <div className="space-y-6">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
-            Vaibhav <span className="gradient-text">Sharma</span>
+            Vaibhav <span className="bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent">Sharma</span>
           </h1>
           
           <h2 className="text-xl md:text-2xl text-gray-600 font-medium">

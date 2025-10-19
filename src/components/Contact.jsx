@@ -2,8 +2,8 @@ import { Mail, Github, Linkedin, MessageSquare } from 'lucide-react'
 
 function Contact() {
   return (
-    <section id="contact" className="bg-gray-50 section-padding">
-      <div className="max-width-container">
+    <section id="contact" className="bg-gray-50 px-6 py-16 md:px-12 lg:px-20">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Let's Connect
@@ -16,7 +16,7 @@ function Contact() {
         
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 card-hover">
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               <div className="flex items-center space-x-4 mb-4">
                 <div className="p-3 bg-primary-50 rounded-lg">
                   <Mail className="w-6 h-6 text-primary-600" />
@@ -35,7 +35,7 @@ function Contact() {
               </a>
             </div>
             
-            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 card-hover">
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               <div className="flex items-center space-x-4 mb-4">
                 <div className="p-3 bg-primary-50 rounded-lg">
                   <MessageSquare className="w-6 h-6 text-primary-600" />
