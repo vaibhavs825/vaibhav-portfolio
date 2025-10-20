@@ -1,69 +1,25 @@
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
+import React from 'react'
 
-function Hero() {
-  const scrollToSection = (sectionId) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
-  }
-
+export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
-      <div className="max-w-6xl mx-auto px-6 py-16 md:px-12 lg:px-20 text-center">
-        <div className="space-y-6">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
-            Vaibhav <span className="bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent">Sharma</span>
-          </h1>
-          
-          <h2 className="text-xl md:text-2xl text-gray-600 font-medium">
-            Senior Data Scientist | MLOps & Data Engineering Enthusiast
-          </h2>
-          
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Passionate about transforming data into actionable insights. Specializing in building scalable 
-            ML pipelines, real-time data systems, and end-to-end MLOps solutions that drive business value.
-          </p>
-          
-          <div className="flex justify-center space-x-6 pt-4">
-            <a 
-              href="https://github.com/vaibhavsharma" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-100 hover:bg-primary-50 transition-colors group"
-              data-testid="link-github"
-            >
-              <Github className="w-6 h-6 text-gray-700 group-hover:text-primary-600" />
-            </a>
-            
-            <a 
-              href="https://linkedin.com/in/vaibhavs825" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-100 hover:bg-primary-50 transition-colors group"
-              data-testid="link-linkedin"
-            >
-              <Linkedin className="w-6 h-6 text-gray-700 group-hover:text-primary-600" />
-            </a>
-            
-            <a 
-              href="mailto:vaibhavs825@gmail.com" 
-              className="p-3 rounded-full bg-gray-100 hover:bg-primary-50 transition-colors group"
-              data-testid="link-email"
-            >
-              <Mail className="w-6 h-6 text-gray-700 group-hover:text-primary-600" />
-            </a>
-          </div>
-          
-          <button 
-            onClick={() => scrollToSection('skills')}
-            className="mt-12 inline-flex items-center space-x-2 text-gray-600 hover:text-primary-600 transition-colors"
-            data-testid="button-scroll-skills"
-          >
-            <span>Explore My Work</span>
-            <ArrowDown className="w-4 h-4 animate-bounce" />
-          </button>
+    <section className="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-6 items-center">
+      <div>
+        <p className="text-sm text-gray-600">Hi, my name is</p>
+        <h1 className="text-4xl font-extrabold">Vaibhav Sharma</h1>
+        <p className="mt-4 text-gray-700">
+          I’m a Senior Data Scientist specializing in <strong>MLOps, data engineering, and scalable ML systems</strong>. I build production-grade ML pipelines that automate model training, testing, deployment and monitoring.
+        </p>
+        <div className="mt-6 flex gap-3">
+          <a href="#projects" className="px-4 py-2 rounded-md bg-primary text-white">See projects</a>
+          <a href="/resume.pdf" className="px-4 py-2 rounded-md border">Download resume</a>
+        </div>
+      </div>
+
+      <div className="flex justify-center md:justify-end">
+        <div className="w-56 h-56 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white shadow-lg">
+          <div className="text-center">Your Photo</div>
         </div>
       </div>
     </section>
   )
 }
-
-export default Hero

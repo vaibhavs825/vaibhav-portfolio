@@ -1,1 +1,7 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small custom styles */
+body { @apply bg-gray-50 text-gray-900 antialiased; }
+a { @apply text-primary hover:underline; }
